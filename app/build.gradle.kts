@@ -59,5 +59,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("com.newrelic.agent.android:android-agent:7.6.1")
-
+    implementation (libs.applovin.sdk)
+    implementation(libs.vungle.adapter)
 }
