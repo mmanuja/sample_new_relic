@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.newrelic)
+
 }
 
 android {
@@ -9,7 +11,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.samplerelic"
+        applicationId = "com.tryimpel.dippy"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -56,4 +58,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.newrelic.agent.android:android-agent:7.6.1")
+
 }

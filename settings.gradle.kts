@@ -7,6 +7,8 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+        maven { url = uri("https://download.newrelic.com/android-agent/maven") }
+
         mavenCentral()
         gradlePluginPortal()
     }
@@ -16,6 +18,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://download.newrelic.com/android-agent/maven") }
+
     }
 }
 
